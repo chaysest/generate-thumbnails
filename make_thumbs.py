@@ -112,9 +112,9 @@ def makeAllThumbs(input, output, frame_choice):
 
 def usage(choice="general"):
     msg = {
-        "general": "Error: Missing arguments. \nTo make one thumbnail: python make_thumbs.py [input file path] [output location] [optional time int]\nTo make multiple thumbnails: python make_thumbs.py -r [input directory of videos] [output location] [optional time int]",
-        "single": "To make one thumbnail: python make_thumbs.py [input file path] [output location] [optional time int]",
-        "-r": "To make multiple thumbnails: python make_thumbs.py -r [input directory of videos] [output location] [optional time int]",
+        "general": "Error: Missing arguments. \nTo make one thumbnail: python make_thumbs.py FILE DIR [n]\nTo make multiple thumbnails: python make_thumbs.py -r DIR DIR [n]",
+        "single": "To make one thumbnail: python make_thumbs.py FILE DIR [n]",
+        "-r": "To make multiple thumbnails: python make_thumbs.py -r DIR0 DIR1 [n]",
     }
     if choice in msg:
         print(msg[choice])
